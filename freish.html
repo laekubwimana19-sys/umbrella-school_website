@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Umbrella School Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f5;
+        }
+
+        h2 {
+            color: green;
+            text-align: center;
+        }
+
+        form {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 6px;
+        }
+
+        .radio-group input {
+            width: auto;
+        }
+
+        .buttons input {
+            width: 48%;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Ways of Registering Students to Umbrella School</h2>
+
+<form action="register.php" method="post">
+
+    <label>Student's Name:</label>
+    <input type="text" name="student_name" required>
+
+    <label>Student's Birthday:</label>
+    <input type="date" name="birthday" required>
+
+    <label>Select the Student's Sex:</label>
+    <div class="radio-group">
+        <input type="radio" name="sex" value="male"> Male
+        <input type="radio" name="sex" value="female"> Female
+    </div>
+
+    <label>Select the Class:</label>
+    <select name="class">
+        <option>Baby Class</option>
+        <option>Middle Class</option>
+        <option>Top Class</option>
+        <option>P1</option>
+        <option>P2</option>
+        <option>P3</option>
+        <option>P4</option>
+        <option>P5</option>
+        <option>P6</option>
+    </select>
+
+    <label>Father's Name:</label>
+    <input type="text" name="father_name">
+
+    <label>Father's Phone:</label>
+    <input type="tel" name="father_phone">
+
+    <label>Mother's Name:</label>
+    <input type="text" name="mother_name">
+
+    <label>Comment:</label>
+    <textarea name="comments" rows="5"></textarea>
+
+    <div class="buttons">
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+    </div>
+
+</form>
+
+</body>
+</html>
